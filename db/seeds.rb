@@ -5,7 +5,7 @@ Patient.destroy_all
 Appointment.destroy_all
 Specialty.destroy_all
 City.destroy_all
-HaveSpecialty.destroy_all
+Deal_With_it.destroy_all
 
 #To create data for 
 
@@ -34,7 +34,7 @@ Specialty.create(name: "Geriatre")
 Specialty.create(name: "Emergensist")
 
 20.times do
-  HaveSpecialty.create( specialty: Specialty.all.sample, doctor: Doctor.all.sample)
+  Deal_with_it.create( specialty: Specialty.all.sample, doctor: Doctor.all.sample)
 end
 
 
